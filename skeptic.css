@@ -139,13 +139,13 @@ header section {
     h1 {
         color: var(--dark-stunning);
         font: 1rem/1 var(--odd-font);
-        letter-spacing: -.22rem;
-        font-weight: 100;
+        font-weight: 300;
+        margin-bottom: 6rem;
     }
 
     h1 strong {
         color: var(--dark-stunning);
-        font-weight: 100;
+        font-weight: 300;
     }
 
     h1 span {
@@ -153,9 +153,10 @@ header section {
     }
     
     header h2 {
-        font: 1.5rem/1 var(--odd-font);
+        font: 4rem/1 var(--odd-font);
         color: var(--stunning);
-        font-weight: 100;
+        font-weight: 300;
+        letter-spacing: -0.06em;
         
     }
 
@@ -182,6 +183,7 @@ header section {
     header h2 {
         font-size: 6rem;
         letter-spacing: -.32rem;
+        font-weight: 100;
     }
 }
 
@@ -204,9 +206,9 @@ header section {
         min-height: 60vh;
     }
     header h2 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 300;
-        letter-spacing: -.08em;
+        letter-spacing: -.04em;
     }
 }
 
@@ -244,9 +246,9 @@ main {
 }
 
     MAIN H2 {
-        font: 3rem/1 var(--odd-font);
+        font: 2.25rem/1 var(--odd-font);
         letter-spacing: -.15rem;
-        font-weight: 100;
+        font-weight: 300;
         color: var(--stunning);
         margin-bottom: 6rem;
     }
@@ -254,7 +256,7 @@ main {
 
     MAIN H2 STRONG {
         color: #161921;
-        font-weight: 100;
+        font-weight: 300;
     }
 
     #services DIV {
@@ -306,6 +308,13 @@ main {
 
         main h2 {
             font-size: 3rem;
+            font-weight: 100;
+        }
+
+
+
+        main h2 strong {
+            font-weight: 100;
         }
 
         main P,
