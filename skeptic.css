@@ -317,16 +317,6 @@ main {
     padding: 0;
 }
 
-#contact div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    grid-column: 1 / 3;
-    border: var(--section-border);
-    min-height: 45vh;
-    padding: var(--padded-room);
-}
-
 #contact div {
     display: flex;
     flex-direction: column;
@@ -335,7 +325,17 @@ main {
     padding: var(--padded-room);
     border: var(--section-border);
     font: 1.125rem/1.33333 var(--even-font); 
+    backdrop-filter: brightness(105%) blur(4px) opacity(.9);
 }
+
+#contact div:first-child {
+    grid-column: 1 / 3;
+    border: var(--section-border);
+    min-height: 45vh;
+    padding: var(--padded-room);
+    backdrop-filter: unset;
+}
+
 
 #contact H3 {
     font: 1.5rem/1 var(--odd-font);
