@@ -341,9 +341,11 @@ main {
 #contact H3 {
     font: 1.5rem/1 var(--odd-font);
     font-style: normal;
+    font-weight: 100;
     color: var(--stunning);
     letter-spacing: var(--tight-letter-spacing);
     margin-bottom: 4rem; 
+    letter-spacing: -.12rem;
 }
 
 #contact A {
