@@ -17,9 +17,9 @@
     --copper: #7F3C0F;
     --new-moon: #323333;
     
-    --button-padding-small: .5rem .75rem;
-    --button-padding-large: .75rem 2rem;
-    --outside-button-padding: .25rem;
+    --button-padding-small: .3125rem .5625rem;
+    --button-padding-large: .5625rem 1.3125rem;
+    --outside-button-padding: .1875rem;
 
     --odd-font: "attribute-text", sans-serif;
     --even-font: "attribute-text", serif;
