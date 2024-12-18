@@ -116,7 +116,7 @@ BODY {
 
 header {
     width: 100%;
-    background: transparent url("svg/questions.svg") 80% 100% no-repeat;
+    background: transparent url("svg/questions.svg") top right no-repeat;
 }
 
 header section {
