@@ -413,7 +413,7 @@ main {
             font-weight: 300;
         }
 
-        #clients-list UL {
+        #services-list UL, #clients-list UL {
             gap: .25rem;
             font-size: 1rem;
         }
