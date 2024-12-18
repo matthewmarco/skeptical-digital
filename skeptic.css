@@ -123,7 +123,7 @@ header section {
     min-height: 70vh;
     width: 100%;
     max-width: 100ch;
-    padding: 8vw var(--padded-room) var(--padded-room) var(--padded-room);
+    padding: 8vw var(--padded-room) 8vw var(--padded-room);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
