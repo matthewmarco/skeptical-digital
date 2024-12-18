@@ -64,12 +64,12 @@ BODY {
 #available a[href="#contact"] {
     display: block;
     border: 1px solid #C33215;
-    background: #d44503;
+    background: #d44503 radial-gradient(circle, #d24403 0%, #ee4e03 95%, #fd5102 100%);
     border-top: 1px solid #F5671F;
     border-left: 1px solid #F5671F;
     border-right: 2px solid #E65618;
     border-bottom: 2px solid #E65618;
-    padding: var(--outside-button-padding);
+    padding: .5rem .75rem;
     border-radius: .25rem;
     transform: rotate(.75deg);
     transition: .3s;
@@ -281,6 +281,8 @@ main {
 
     #services H3 {
         font: bold 1.125rem/1 var(--even-font);
+        text-transform: uppercase;
+        letter-spacing: .1rem;
     }
 
     #services UL {
@@ -312,12 +314,12 @@ main {
         display: inline-block;
         text-decoration: none;
         transform: rotate(-1.5deg);
-        border-radius: 1rem;
+        border-radius: .25rem;
         border-top: 1px solid #F5671F;
         border-left: 1px solid #F5671F;
         border-right: 2px solid #E65618;
         border-bottom: 2px solid #E65618;
-        background: #d44503;
+        background: #d44503 radial-gradient(circle, #d24403 0%, #dd4803 50%, #ee4e03 99%, #fd5102 100%);
         transition: .3s;
     }
     
