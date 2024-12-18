@@ -7,7 +7,7 @@
 :root {
     
     --tight-letter-spacing: -0.025rem;
-    --section-border: 1px solid #A5A8A8;
+    --section-border: 1px solid #C4C6CE;
     --padded-room: clamp(1rem, 2vw, 10rem);
 
     --full-moon: #DFE2E3;
@@ -63,18 +63,20 @@ BODY {
 
 #available a[href="#contact"] {
     display: block;
-    border: 1px solid #C33215;
     background: #d44503 radial-gradient(circle, #d24403 0%, #ee4e03 95%, #fd5102 100%);
     border-top: 1px solid #F5671F;
     border-left: 1px solid #F5671F;
     border-right: 2px solid #E65618;
     border-bottom: 2px solid #E65618;
-    padding: .5rem .75rem;
+    padding: .375rem .75rem;
     border-radius: .25rem;
     transform: rotate(.75deg);
     transition: .3s;
     color: white;
     font-weight: bold;
+    text-transform: none;
+    letter-spacing: 0; 
+    font-size: 1rem;
 }
 
 
@@ -267,25 +269,35 @@ main {
         font-weight: 300;
     }
 
-    #services DIV {
+    #services DIV, #about DIV {
         display: flex;
         flex-direction: column;
         gap: 3.375rem;
     }
 
-    #services DIV DIV {
+    #services DIV DIV, #about DIV DIV {
         display: flex;
         flex-direction: column;
         gap: 1.125rem;
     }
 
-    #services H3 {
+    #services H3, #about H3 {
+        margin-bottom: 0rem;
         font: bold 1.125rem/1 var(--even-font);
         text-transform: uppercase;
         letter-spacing: .1rem;
+        color: var(--stunning);
     }
 
-    #services UL {
+        #services H3::after, #about H3::after {
+            content: ":";
+        }
+
+    #services-list, #clients-list {
+        gap: .75rem;
+    }
+
+    #services UL, #about UL {
         display: flex;
         flex-direction: column;
         gap: .5rem;
@@ -296,7 +308,6 @@ main {
         max-width: 50ch;
     }
 
-    #about DIV,
     #contact DIV {
         display: flex;
         flex-direction: column;
@@ -314,20 +325,22 @@ main {
         display: inline-block;
         text-decoration: none;
         transform: rotate(-1.5deg);
-        border-radius: .25rem;
+        border-radius: .5rem;
         border-top: 1px solid #F5671F;
         border-left: 1px solid #F5671F;
         border-right: 2px solid #E65618;
         border-bottom: 2px solid #E65618;
         background: #d44503 radial-gradient(circle, #d24403 0%, #dd4803 50%, #ee4e03 99%, #fd5102 100%);
         transition: .3s;
+        text-transform: none;
+        color: white;
+        text-align: center;
+        font: bold 1.125rem/1.33333 var(--even-font);   
+        padding: .75rem 1.5rem;
     }
     
     #contact A SPAN {
         display: block;
-        color: white;
-        text-align: center;
-        font: bold 1.125rem/1.33333 var(--even-font);   
     }
     
     #contact A:hover {
@@ -354,24 +367,32 @@ main {
         }
 
         main P,
-        main UL {
+        #services UL {
             font-size: 1.5rem;
         }
 
-        #services UL {
+        #services UL, #about UL {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             gap: .5rem;
         }
 
-        #services LI::after {
+        
+
+        #services LI::after, #about LI::after {
             content: " •";
+            color: white;
         }
 
-        #services LI:last-child::after {
+        #services LI:last-child::after, #about LI:last-child::after {
             content: "";
         }
         
+        #about UL {
+            font-size: 1.125rem;
+            line-height: 1.333;
+        }
 
         #contact A SPAN {
             font: bold 1.5rem/1.5 var(--even-font);   
