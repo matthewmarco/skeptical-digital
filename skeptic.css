@@ -128,14 +128,14 @@ header section {
 }
 
     h1 {
-        color: #6A7083;
+        color: var(--dark-stunning);
         font: 4rem/1 var(--odd-font);
         letter-spacing: -.22rem;
         font-weight: 100;
     }
 
     h1 strong {
-        color: #6A7083;
+        color: var(--dark-stunning);
         font-weight: 100;
     }
 
@@ -172,6 +172,7 @@ header section {
 
     header h2 {
         font-size: 2.25rem;
+        letter-spacing: -.12rem;
     }
 }
 
@@ -219,7 +220,7 @@ main {
 
     MAIN H2 {
         font: 3rem/1 var(--odd-font);
-        letter-spacing: 0;
+        letter-spacing: -.25rem;
         font-weight: 100;
         color: var(--stunning);
         margin-bottom: 6rem;
