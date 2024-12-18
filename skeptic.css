@@ -21,6 +21,8 @@
     --button-padding-large: .5625rem 1.3125rem;
     --outside-button-padding: .1875rem;
 
+    --flex-gap: clamp(1rem, 2vw, 2rem);
+
     --odd-font: "attribute-text", sans-serif;
     --even-font: "attribute-text", serif;
 
@@ -61,36 +63,25 @@ BODY {
 
 #available a[href="#contact"] {
     display: block;
-    background: linear-gradient(0deg, #7F3C0F, #AC5114);
+    border: 1px solid #C33215;
+    background: #d44503;
+    border-top: 1px solid #F5671F;
+    border-left: 1px solid #F5671F;
+    border-right: 2px solid #E65618;
+    border-bottom: 2px solid #E65618;
     padding: var(--outside-button-padding);
-    border-radius: 1rem;
-    transform: rotate(1.5deg);
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(0deg, #7F3C0F, #AC5114);
+    border-radius: .25rem;
+    transform: rotate(.75deg);
     transition: .3s;
+    color: white;
+    font-weight: bold;
 }
 
 
 #available a[href="#contact"]:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); transform: rotate(-0.5deg);
+    transform: rotate(-0.5deg);
 }
 
-#available a[href="#contact"] SPAN {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: var(--copper) linear-gradient(0deg, #AC5114, #7F3C0F);
-    padding: var(--button-padding-small);
-    border-radius: 1rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-shadow: var(--skeumorphic-text-shadow);
-    text-transform: none;
-    letter-spacing: 0;
-}
 
     @media screen and (max-width: 400px) {
         #available {
@@ -227,6 +218,23 @@ main {
         font-weight: 300;
     }
 
+    main A {
+        text-decoration: underline;
+        color: var(--stunning);
+        text-decoration-color: #F5671F;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
+        transition: .2s;
+    }
+
+    main A:hover {
+        text-decoration: underline;
+        color: var(--stunning);
+        text-decoration-color: #F5671F;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 3px;
+    }
+
     P STRONG,
     UL STRONG {
         font-weight: 700;
@@ -234,7 +242,7 @@ main {
 
     
 
-#services, #about {
+#services, #about, #contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -286,10 +294,11 @@ main {
         max-width: 50ch;
     }
 
-    #about DIV {
+    #about DIV,
+    #contact DIV {
         display: flex;
         flex-direction: column;
-        gap: 2vw;
+        gap: var(--flex-gap);
     }
 
     #mission P:first-child:first-line,
@@ -298,6 +307,31 @@ main {
         letter-spacing: .07rem;
     }
 
+
+    #contact A {
+        display: inline-block;
+        text-decoration: none;
+        transform: rotate(-1.5deg);
+        border-radius: 1rem;
+        border-top: 1px solid #F5671F;
+        border-left: 1px solid #F5671F;
+        border-right: 2px solid #E65618;
+        border-bottom: 2px solid #E65618;
+        background: #d44503;
+        transition: .3s;
+    }
+    
+    #contact A SPAN {
+        display: block;
+        color: white;
+        text-align: center;
+        font: bold 1.125rem/1.33333 var(--even-font);   
+    }
+    
+    #contact A:hover {
+        transform: rotate(.5deg);
+    }
+        
 
     @media screen and (min-width: 800px) {
     
@@ -336,6 +370,12 @@ main {
             content: "";
         }
         
+
+        #contact A SPAN {
+            font: bold 1.5rem/1.5 var(--even-font);   
+            padding: var(--button-padding-large);
+        }
+
     }
 
     @media screen and (max-width: 400px) {
@@ -352,106 +392,47 @@ main {
     }
 
 
-#contact {
-    display: grid;
-    width: 100%;
-    max-width: 100ch;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: var(--padded-room);
-    padding: 0;
-}
-
-#contact div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 20vh;
-    padding: var(--padded-room);
-    border: var(--section-border);
-    font: 1.125rem/1.33333 var(--even-font); 
-    backdrop-filter: brightness(105%) blur(4px) opacity(.9);
-}
-
-#contact div:first-child {
-    grid-column: 1 / 3;
-    border: var(--section-border);
-    min-height: 45vh;
-    padding: var(--padded-room);
-    backdrop-filter: unset;
-}
-
-
-#contact H3 {
-    font: 1.5rem/1 var(--odd-font);
-    font-style: normal;
-    font-weight: 100;
-    color: var(--stunning);
-    letter-spacing: var(--tight-letter-spacing);
-    margin-bottom: 4rem; 
-    letter-spacing: -.12rem;
-}
-
-#contact A {
-    display: block;
-    border-radius: 1rem;
-    padding: var(--outside-button-padding);
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(0deg, #7F3C0F, #AC5114);
-    transition: .3s;
-}
-
-#contact A SPAN {
-    display: block;
-    border-radius: 1rem;
-    padding: var(--button-padding-small);
-    background: var(--copper) linear-gradient(0deg, #AC5114, #7F3C0F);
-    color: white;
-    text-align: center;
-    font: bold 1.125rem/1.33333 var(--even-font);   
-    text-shadow: var(--skeumorphic-text-shadow);
-}
-
-#contact A:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-}
-    
-    @media screen and (min-width: 800px) {
-
-        #contact A {
-            font: 1.5rem/1.5 var(--even-font);   
-        }
-
-        #contact H3 {
-            font-size: 2.25rem;
-        }    
-    }
-
-    @media screen and (max-width: 500px) {
-
-        #contact H3 {
-            font-weight: 300;
-        }
-        
-        #contact {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #contact div {
-            width: 100%;
-        }
-    }
-
-
 footer {    
     min-height: 40vh;
     padding: var(--padded-room);
-    color: var(--copper);
+    color: var(--stunning);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    gap: clamp(2rem, 4vw, 4rem);
+}
+
+footer #locate {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: var(--flex-gap);   
+    max-width: 100ch;
+}
+
+footer P {
+    font: 1.125rem/1.333 var(--even-font);
+}
+
+footer H3 {
+    font: 1.125rem/1.333 var(--even-font);
+    font-weight: 300;
+}
+
+footer A {
+    text-decoration: underline;
+    color: var(--stunning);
+    text-decoration-color: #F5671F;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+@media screen and (min-width: 800px) {
+
+    footer #locate {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: var(--flex-gap);
+        max-width: 100ch;
+    }
 }
