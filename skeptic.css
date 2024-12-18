@@ -100,7 +100,7 @@ BODY {
 
     @media screen and (min-width: 800px) {
         #available {
-            font-size: 1.5rem;
+            font-size: 1.125rem;
             padding: 1rem var(--padded-room);
         }
 
