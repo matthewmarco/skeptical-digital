@@ -138,7 +138,7 @@ header section {
 
     h1 {
         color: var(--dark-stunning);
-        font: 4rem/1 var(--odd-font);
+        font: 1rem/1 var(--odd-font);
         letter-spacing: -.22rem;
         font-weight: 100;
     }
@@ -166,7 +166,7 @@ header section {
     }
 
     h1 {
-        font-size: 9rem;
+        font-size: 1rem;
         letter-spacing: 0rem;
         margin-bottom: 6rem;
     }
@@ -180,15 +180,15 @@ header section {
     }
 
     header h2 {
-        font-size: 2.25rem;
-        letter-spacing: -.12rem;
+        font-size: 6rem;
+        letter-spacing: -.32rem;
     }
 }
 
 @media screen and (max-width: 400px) {
 
     h1 {
-        font-size: 3rem;
+        font-size: 1rem;
         letter-spacing: 0rem;
         margin-bottom: 4.5rem;
         font-weight: 300;
@@ -204,8 +204,9 @@ header section {
         min-height: 60vh;
     }
     header h2 {
-        font-size: 1.25rem;
+        font-size: 3rem;
         font-weight: 300;
+        letter-spacing: -.08em;
     }
 }
 
@@ -244,7 +245,7 @@ main {
 
     MAIN H2 {
         font: 3rem/1 var(--odd-font);
-        letter-spacing: -.25rem;
+        letter-spacing: -.15rem;
         font-weight: 100;
         color: var(--stunning);
         margin-bottom: 6rem;
@@ -304,7 +305,7 @@ main {
         }
 
         main h2 {
-            font-size: 4.5rem;
+            font-size: 3rem;
         }
 
         main P,
