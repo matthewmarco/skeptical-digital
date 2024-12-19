@@ -37,11 +37,7 @@ HTML {
 }
 
 BODY {
-    background: #DFE2E3;
-    background-image: url("svg/windingroad.svg");
-    background-repeat: repeat-y;
-    
-    background-position: 94% 50%;
+    background: var(--full-moon) url("svg/windingroad.svg") 94% 50% repeat-y;
     color: var(--new-moon);
     font-family: var(--even-font);
 }
@@ -163,14 +159,6 @@ header section {
         font-size: 1rem;
         letter-spacing: 0rem;
         margin-bottom: 6rem;
-    }
-
-    header img {
-        width: 100%;
-        max-width: 80ch;
-        margin: 0 0 3rem;
-        transform: rotate(-5deg);
-        margin-left: 20ch;
     }
 
     header h2 {
