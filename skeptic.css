@@ -113,23 +113,52 @@ BODY {
 header {
     width: 100%;
     background: transparent url("svg/questions.svg") 80% 20% no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header section {
     min-height: 70vh;
     width: 100%;
     max-width: 100ch;
-    padding: 8vw var(--padded-room) 8vw var(--padded-room);
+    padding: var(--padded-room) var(--padded-room) 8vw var(--padded-room);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+    header #logo {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        width: auto;
+        margin-bottom: 6rem;
+    }
+
+    header .eyes {
+        display: flex;
+        flex-direction: row;
+        gap: .16rem;
+    }
+
+    header .why {
+        display: inline;
+        height: 1.25rem;
+        transform-origin: 50% 50%;
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+
+    header #logo:hover .why {
+        transform: rotate(0deg);
+    }
+
     h1 {
         color: var(--dark-stunning);
-        font: 1rem/1 var(--odd-font);
+        font: 1.5rem/1 var(--odd-font);
         font-weight: 300;
-        margin-bottom: 6rem;
+        letter-spacing: -.06rem;
     }
 
     h1 strong {
@@ -156,9 +185,8 @@ header section {
     }
 
     h1 {
-        font-size: 1rem;
-        letter-spacing: 0rem;
-        margin-bottom: 6rem;
+        font-size: 1.5rem;
+        letter-spacing: -.06rem;
     }
 
     header h2 {
@@ -173,7 +201,6 @@ header section {
     h1 {
         font-size: 1rem;
         letter-spacing: 0rem;
-        margin-bottom: 4.5rem;
         font-weight: 300;
     }
 
