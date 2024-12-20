@@ -14,6 +14,7 @@
     --stunning: #414A62;
     
     --dark-stunning: #2D3243;
+    --even-darker-stunning: #161921;
     --copper: #7F3C0F;
     --new-moon: #323333;
     --bright-fucking-orange: #F5671F;
@@ -169,7 +170,7 @@ header section {
 }
 
     h1 {
-        color: var(--dark-stunning);
+        color: var(--even-darker-stunning);
         font: 1.5rem/1 var(--odd-font);
         font-weight: 300;
         letter-spacing: -.06rem;
@@ -294,7 +295,7 @@ main {
 
 
     MAIN H2 STRONG {
-        color: #161921;
+        color: var(--even-darker-stunning);
         font-weight: 300;
     }
 
