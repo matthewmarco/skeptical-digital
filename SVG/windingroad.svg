@@ -3,23 +3,29 @@
   <defs>
     <style>
       .cls-1 {
-        stroke-dasharray: 1 2;
+        opacity: .6;
       }
 
-      .cls-1, .cls-2 {
+      .cls-2, .cls-3 {
         fill: none;
-        stroke: #fff;
+        stroke: #c4c6ce;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         stroke-width: .5px;
       }
+
+      .cls-3 {
+        stroke-dasharray: 3 5;
+      }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <g>
-      <path class="cls-2" d="M7.3.25s-.02.17-.05.49"/>
-      <path class="cls-1" d="M7.05,2.73c-1.97,19.95-14.4,158.39.25,349.43,15.12,197.11,1.41,418.39.1,438.59"/>
-      <path class="cls-2" d="M7.33,791.76c-.02.33-.03.49-.03.49"/>
+    <g class="cls-1">
+      <g>
+        <path class="cls-2" d="M7.3.25s-.05.5-.15,1.49"/>
+        <path class="cls-3" d="M6.67,6.71c-2.8,30.27-13.27,164.18.63,345.45,14.65,190.91,2.24,404.49.26,436.1"/>
+        <path class="cls-2" d="M7.4,790.76c-.06.99-.1,1.49-.1,1.49"/>
+      </g>
     </g>
   </g>
 </svg>

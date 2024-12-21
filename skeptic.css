@@ -11,6 +11,7 @@
     --padded-room: clamp(1rem, 2vw, 10rem);
 
     --full-moon: #DFE2E3;
+    --moonlight: #edefef;
     --stunning: #414A62;
     
     --dark-stunning: #2D3243;
@@ -39,7 +40,7 @@ HTML {
 }
 
 BODY {
-    background: var(--full-moon) url("svg/windingroad.svg") 94% 50% repeat-y;
+    background: var(--moonlight) url("svg/windingroad.svg") 94% 50% repeat-y;
     color: var(--new-moon);
     font-family: var(--even-font);
 }
@@ -158,28 +159,26 @@ header section {
         display: flex;
         flex-direction: row;
         gap: .16rem;
+        
     }
 
     header .why {
+        box-shadow: -2px -2px 0px #b6dadb, 2px 2px 0px var(--bright-fucking-orange);
+        border-radius: 50%;
+        margin: 0; padding: 0;
+        height: 1.25rem;
+    }
+
+    header .why img {
         display: inline;
         height: 1.25rem;
         transform-origin: 50% 50%;
         transform: rotate(360deg);
         transition: 1s;
-       /* animation-name: eyeroll;*/
-        animation-duration: 30s;
-        animation-delay: 0s;
-        animation-iteration-count: infinite;
     }
 
-    @keyframes eyeroll {
-        0%   {transform: rotate(360deg);}
-        10%  {transform: rotate(0deg);}
-        90%  {transform: rotate(360deg);}
-      }
-
 @media screen and (hover: hover) {
-    header #logo:hover .why {
+    header #logo:hover .why img {
         transform: rotate(0deg);
         animation: none;
     }
@@ -203,8 +202,8 @@ header section {
     }
     
     header h2 {
-        font: 4rem/1 var(--odd-font);
-        color: var(--stunning);
+        font: 3.5rem/1 var(--odd-font);
+        color: #414A62;
         font-weight: 300;
         letter-spacing: -0.06em;
     }
@@ -223,7 +222,7 @@ header section {
     }
 
     header h2 {
-        font-size: 6rem;
+        font-size: 5.5rem;
         letter-spacing: -.32rem;
         font-weight: 300;
     }
@@ -296,11 +295,19 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 60vh;
+    min-height: 50vh;
     width: 100%;
     max-width: 100ch;
     border: var(--section-border);
+    background-color: var(--moonlight);
     padding: var(--padded-room);
+    box-shadow: 1vw 1vw var(--full-moon);
+    border-radius: 1vw;
+}
+
+#contact {
+    background-color: white;
+    border: 2px solid var(--bright-fucking-orange);
 }
 
     MAIN H2 {
@@ -363,7 +370,8 @@ main {
     }
 
     #mission P:first-child:first-line,
-    #about P:first-child::first-line {
+    #about P:first-child::first-line,
+    #contact P:first-child::first-line {
         font-variant: small-caps;
         letter-spacing: .07rem;
     }
@@ -423,14 +431,16 @@ main {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: .5rem;
+            gap: .75rem;
         }
+
+        #about UL { gap: .5rem;}
 
         
 
         #services LI::after, #about LI::after {
             content: " •";
-            color: white;
+            color: #A3A7B2;
         }
 
         #services LI:last-child::after, #about LI:last-child::after {
