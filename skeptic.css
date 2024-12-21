@@ -225,7 +225,7 @@ header section {
     header h2 {
         font-size: 6rem;
         letter-spacing: -.32rem;
-        font-weight: 100;
+        font-weight: 300;
     }
 }
 
@@ -405,13 +405,13 @@ main {
 
         main h2 {
             font-size: 3rem;
-            font-weight: 100;
+            font-weight: 300;
         }
 
 
 
         main h2 strong {
-            font-weight: 100;
+            font-weight: 300;
         }
 
         main P,
