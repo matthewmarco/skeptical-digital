@@ -163,7 +163,7 @@ header section {
     }
 
     header .why {
-        box-shadow: -2px -2px 0px #b6dadb, 2px 2px 0px var(--bright-fucking-orange);
+        box-shadow: -1px -1px 0px #b6dadb, 1px 1px 0px var(--bright-fucking-orange);
         border-radius: 50%;
         margin: 0; padding: 0;
         height: 1.25rem;
