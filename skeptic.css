@@ -75,8 +75,24 @@ BODY {
     text-transform: none;
     letter-spacing: 0; 
     font-size: 1rem;
+    animation-name: level;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
+@keyframes level {
+    0% {
+        transform: rotate(.75deg);
+    }
+
+    50% {
+        transform: rotate(-.75deg);
+    }
+
+    100% {
+        transform: rotate(.75deg);
+    }
+}
 
 #available a[href="#contact"]:hover {
     transform: rotate(-0.5deg);
@@ -171,9 +187,10 @@ header section {
 
     h1 {
         color: var(--even-darker-stunning);
-        font: 1.5rem/1 var(--odd-font);
-        font-weight: 300;
-        letter-spacing: -.06rem;
+        font: 1rem/1 var(--odd-font);
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .16rem;
     }
 
     h1 strong {
@@ -200,8 +217,9 @@ header section {
     }
 
     h1 {
-        font-size: 1.5rem;
-        letter-spacing: -.06rem;
+        font-size: 1rem;
+        letter-spacing: .16rem;
+        font-weight: 700;
     }
 
     header h2 {
@@ -215,7 +233,7 @@ header section {
 
     h1 {
         font-size: 1rem;
-        letter-spacing: -.06rem;
+        letter-spacing: .08rem;
         font-weight: 700;
     }
 
