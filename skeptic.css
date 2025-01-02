@@ -19,6 +19,7 @@
     --copper: #7F3C0F;
     --new-moon: #323333;
     --bright-fucking-orange: #F5671F;
+    --bright-blue: #b6dadb;
     
     --button-padding-small: .3125rem .5625rem;
     --button-padding-large: .5625rem 1.3125rem;
@@ -163,7 +164,7 @@ header section {
     }
 
     header .why {
-        box-shadow: -1px -1px 0px #b6dadb, 1px 1px 0px var(--bright-fucking-orange);
+        box-shadow: -1px -1px 0px var(--bright-blue), 1px 1px 0px var(--bright-fucking-orange);
         border-radius: 50%;
         margin: 0; padding: 0;
         height: 1.25rem;
@@ -269,7 +270,7 @@ main {
 
     main A {
         text-decoration: underline;
-        color: var(--stunning);
+        color: var(--dark-stunning);
         text-decoration-color: var(--bright-fucking-orange);
         text-decoration-thickness: 2px;
         text-underline-offset: 4px;
@@ -278,10 +279,10 @@ main {
 
     main A:hover {
         text-decoration: underline;
-        color: var(--stunning);
-        text-decoration-color: var(--bright-fucking-orange);
-        text-decoration-thickness: 4px;
-        text-underline-offset: 3px;
+        color: var(--even-darker-stunning);
+        text-decoration-color: var(--stunning);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
     }
 
     P STRONG,
@@ -507,8 +508,16 @@ footer H3 {
 
 footer A {
     text-decoration: underline;
-    color: var(--stunning);
-    text-decoration-color: #F5671F;
+    color: var(--dark-stunning);
+    text-decoration-color: var(--bright-fucking-orange);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+footer A:hover {
+    text-decoration: underline;
+    color: var(--dark-stunning);
+    text-decoration-color: var(--stunning);
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
 }
