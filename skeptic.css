@@ -364,6 +364,45 @@ main {
         max-width: 50ch;
     }
 
+    #about IMG {
+        max-width: 50ch;
+    }        
+
+    #about .two-three {
+        display: flex;
+        flex-direction: column;
+        gap: 3.375rem;
+    }  
+
+    #about .two-three div:first-child { display: flex; align-items: end;}
+
+    #about IMG {
+        display: block;
+        max-width: 20ch;
+        margin: 0 0 1rem;
+    }        
+    @media screen and (min-width: 800px) {
+
+        #about IMG {
+            display: block;
+            max-width: 20ch;
+            float: right;
+            margin: 0 0 1rem 1rem;
+        }        
+
+    #about .two-three {
+        display: grid;
+        grid-template-columns: 29fr 12fr;
+        gap: 2vw;
+    }
+
+    #about .two-three div:first-child { grid-column-start: 2; display: flex; align-items: end;}
+    #about .two-three div:nth-child(2) { grid-column-start: 1; grid-row-start: 1;}
+
+}
+
+
+
     #contact DIV {
         display: flex;
         flex-direction: column;
