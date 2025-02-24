@@ -41,7 +41,7 @@ HTML {
 }
 
 BODY {
-    background: var(--moonlight) url("svg/windingroad.svg") 50% 50% repeat-y;
+    background: var(--moonlight) url("svg/windingroad.svg") 10% 50% repeat-y;
     color: var(--new-moon);
     font-family: var(--even-font);
 }
