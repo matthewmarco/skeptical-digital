@@ -132,7 +132,7 @@ BODY {
 
 header {
     width: 100%;
-    background: transparent url("svg/questions.svg") 80% 20% no-repeat;
+    background: transparent url("svg/questions.svg") 50% 20% no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
