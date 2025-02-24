@@ -27,6 +27,7 @@
 
     --flex-gap: clamp(1rem, 2vw, 2rem);
 
+
     --odd-font: "attribute-text", sans-serif;
     --even-font: "attribute-text", serif;
 
@@ -216,7 +217,7 @@ header section {
         font: 3.5rem/1 var(--odd-font);
         color: #414A62;
         font-weight: 300;
-        letter-spacing: -0.03em;
+        letter-spacing: 0;
         text-align: left;
     }
 
@@ -241,7 +242,7 @@ header section {
 
     header h2 {
         font-size: 5.5rem;
-        letter-spacing: -.32rem;
+        letter-spacing: 0rem;
         font-weight: 300;
         text-align: center;
     }
@@ -267,7 +268,7 @@ header section {
     header h2 {
         font-size: 2.8rem;
         font-weight: 300;
-        letter-spacing: -.04em;
+        letter-spacing: 0;
     }
 }
 
@@ -331,7 +332,7 @@ main {
 
     MAIN H2 {
         font: 2.25rem/1 var(--odd-font);
-        letter-spacing: -.15rem;
+        letter-spacing: 0rem;
         font-weight: 300;
         color: #7a808e;
         margin-bottom: 6rem;
@@ -380,10 +381,6 @@ main {
 
     MAIN P {
         max-width: 50ch;
-    }
-
-    #about IMG {
-        max-width: 50ch;
     }        
 
     #about .two-three {
@@ -396,16 +393,17 @@ main {
 
     #about IMG {
         display: block;
-        max-width: 20ch;
-        margin: 0 0 1rem;
+        width: clamp(10ch, 50%, 16ch);
+        float: right;
+        margin: 0 0 1rem 1rem;
     }        
     @media screen and (min-width: 800px) {
 
         #about IMG {
             display: block;
-            max-width: 20ch;
+            width: clamp(12rem, 50%, 30rem);
             float: right;
-            margin: 0 0 1rem 1rem;
+            margin: 0rem 0 1rem 2rem;
         }        
 
     #about .two-three {
@@ -479,6 +477,7 @@ main {
         main h2 {
             font-size: 3rem;
             font-weight: 300;
+            letter-spacing: 0;
         }
 
 
