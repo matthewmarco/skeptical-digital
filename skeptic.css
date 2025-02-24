@@ -136,6 +136,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 header section {
@@ -146,6 +147,7 @@ header section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
     header #logo {
@@ -154,6 +156,7 @@ header section {
         gap: .5rem;
         margin-top: 4vw;
         margin-bottom: 6rem;
+        align-items: flex-start;
     }
 
     header .eyes {
@@ -191,6 +194,7 @@ header section {
         text-transform: uppercase;
         font-weight: 700;
         letter-spacing: .16rem;
+        text-align: left;
     }
 
     h1 strong {
@@ -207,6 +211,7 @@ header section {
         color: #414A62;
         font-weight: 300;
         letter-spacing: -0.06em;
+        text-align: left;
     }
 
 
@@ -214,18 +219,25 @@ header section {
     
     header section {
         min-height: 70vh;
+        align-items: center;
+    }
+
+    header #logo {
+        align-items: center;
     }
 
     h1 {
         font-size: 1rem;
         letter-spacing: .16rem;
         font-weight: 700;
+        text-align: center;
     }
 
     header h2 {
         font-size: 5.5rem;
         letter-spacing: -.32rem;
         font-weight: 300;
+        text-align: center;
     }
 }
 
@@ -256,7 +268,7 @@ header section {
 main {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: var(--padded-room);
     gap: var(--padded-room);
 }
@@ -521,7 +533,8 @@ main {
 footer {    
     min-height: 40vh;
     padding: var(--padded-room);
-    color: var(--stunning);
+    color: var(--full-moon);
+    background-color: var(--stunning);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -543,11 +556,15 @@ footer P {
 footer H3 {
     font: 1.125rem/1.333 var(--even-font);
     font-weight: 300;
+    color: var(--full-moon);
+    font-variant: small-caps;
+    letter-spacing: .1em;
+    margin-bottom: .25rem;
 }
 
 footer A {
     text-decoration: underline;
-    color: var(--dark-stunning);
+    color: white;
     text-decoration-color: var(--bright-fucking-orange);
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
@@ -563,10 +580,21 @@ footer A:hover {
 
 @media screen and (min-width: 800px) {
 
+    footer {    
+        align-items: center;
+        background-color: var(--stunning);
+        color: var(--full-moon);
+    }
+
     footer #locate {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
         gap: var(--flex-gap);
-        max-width: 100ch;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer P {
+        text-align: center;
     }
 }
