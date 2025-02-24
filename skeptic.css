@@ -41,7 +41,7 @@ HTML {
 }
 
 BODY {
-    background: var(--moonlight) url("svg/windingroad.svg") 10% 50% repeat-y;
+    background: var(--moonlight) url("svg/windingroad.svg") 80% 50% repeat-y;
     color: var(--new-moon);
     font-family: var(--even-font);
 }
@@ -102,6 +102,7 @@ BODY {
 
 
     @media screen and (max-width: 400px) {
+
         #available {
             display: flex;
             flex-direction: column;
@@ -117,6 +118,11 @@ BODY {
     }
 
     @media screen and (min-width: 800px) {
+
+        BODY {
+            background: var(--moonlight) url("svg/windingroad.svg") 8% 50% repeat-y;
+        }
+
         #available {
             font-size: 1.125rem;
             padding: 1rem var(--padded-room);
