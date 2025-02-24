@@ -545,7 +545,7 @@ footer #locate {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap: var(--flex-gap);   
+    gap: calc(2 * var(--flex-gap));   
     max-width: 100ch;
 }
 
