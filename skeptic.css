@@ -451,8 +451,15 @@ main {
         text-align: center;
         font: bold 1.125rem/1.33333 var(--even-font);   
         padding: .75rem 1.5rem;
+        animation-name: level;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
     }
     
+    #contact a:hover {
+        transform: rotate(-0.5deg);
+    }
+
     #contact A SPAN {
         display: block;
     }
