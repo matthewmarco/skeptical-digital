@@ -41,7 +41,7 @@ HTML {
 }
 
 BODY {
-    background: var(--moonlight) url("svg/windingroad.svg") 94% 50% repeat-y;
+    background: var(--moonlight) url("svg/windingroad.svg") 50% 50% repeat-y;
     color: var(--new-moon);
     font-family: var(--even-font);
 }
@@ -269,7 +269,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--padded-room);
+    padding: calc(3 * var(--padded-room));
     gap: var(--padded-room);
 }
 
@@ -534,7 +534,7 @@ footer {
     min-height: 40vh;
     padding: var(--padded-room);
     color: var(--full-moon);
-    background-color: var(--stunning);
+    background: var(--stunning);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -582,8 +582,6 @@ footer A:hover {
 
     footer {    
         align-items: center;
-        background-color: var(--stunning);
-        color: var(--full-moon);
     }
 
     footer #locate {
