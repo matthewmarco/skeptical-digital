@@ -487,8 +487,7 @@ main {
             font-weight: 300;
         }
 
-        main P,
-        #services UL {
+        main P {
             font-size: 1.5rem;
         }
 
