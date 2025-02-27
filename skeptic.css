@@ -263,7 +263,7 @@ header section {
 
     H2 .ampersand {
         animation-name: pop-of-color;
-        animation: pop-of-color 1s 4s linear 1 normal both;
+        animation: pop-of-color 1s 2s linear 1 normal both;
         display: inline-block;
     }
 
@@ -278,7 +278,7 @@ header section {
     }    
 
     H2 .highlighted {
-        animation: highlight 1s 4s linear 1 normal both;
+        animation: highlight 1s 2s linear 1 normal both;
     }
 
     @keyframes highlight {
