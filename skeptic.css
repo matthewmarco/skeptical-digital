@@ -32,6 +32,8 @@
     --even-font: "tarzana-wide", serif;
 
     --skeumorphic-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+
 }
 
 
@@ -42,10 +44,18 @@ HTML {
 }
 
 BODY {
-    background: var(--moonlight) url("svg/windingroad.svg") 80% 50% repeat-y;
+    background: url("svg/windingroad.svg") 80% 50% repeat-y;
+    background-color: white;
     color: var(--new-moon);
     font-family: var(--even-font);
+    animation: body 1s linear both;
 }
+
+@keyframes body {
+    to {
+      background-color: var(--moonlight);
+    }
+  }
 
 #available {
     width: 100%;
@@ -59,8 +69,15 @@ BODY {
     font: 1rem/1.5 var(--even-font);
     letter-spacing: var(--tight-letter-spacing);
     overflow: visible;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.01);
+    animation: shadow-rise 2s linear both;
 }
+
+@keyframes shadow-rise {
+    to {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+  }
 
 #available a[href="#contact"] {
     display: block;
@@ -121,8 +138,16 @@ BODY {
     @media screen and (min-width: 800px) {
 
         BODY {
-            background: var(--moonlight) url("svg/windingroad.svg") 8% 50% repeat-y;
+            background: url("svg/windingroad.svg") 8% 50% repeat-y;
+            background-color: white;
+            animation: body 2s linear both;
         }
+
+        @keyframes body {
+            to {
+              background-color: var(--moonlight);
+            }
+          }
 
         #available {
             font-size: 1.125rem;
@@ -227,13 +252,11 @@ header section {
 
     @keyframes tighten {
         0% {
-            line-height: .8;
             letter-spacing: -.2rem;
         }
     
     
         100% {
-            line-height: 1;
             letter-spacing: -.06rem;
         }
     }
@@ -248,18 +271,15 @@ header section {
         0% {
             color: var(--stunning); 
             transform: rotate(-20deg);
+            font-weight: 300;
         }
     
         100% {
             color: var(--bright-fucking-orange);
             transform: rotate(0deg);
+            font-weight: 700;
         }
     }    
-
-    H2 .highlighted {
-        
-    }
-
 
     @keyframes highlight {
         0% {
@@ -319,6 +339,20 @@ header section {
         font-weight: 300;
         line-height: .95;
         text-align: center;
+    }
+    
+
+    @keyframes tighten {
+        0% {
+            line-height: .6;
+            letter-spacing: -.2rem;
+        }
+    
+    
+        100% {
+            line-height: .95;
+            letter-spacing: -.06rem;
+        }
     }
 }
 
