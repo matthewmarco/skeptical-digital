@@ -46,6 +46,7 @@ HTML {
 BODY {
     background: url("svg/windingroad.svg") 80% 50% repeat-y;
     background-color: white;
+    background-attachment: fixed;
     color: var(--new-moon);
     font-family: var(--even-font);
     animation: body 1s linear both;
@@ -648,7 +649,7 @@ footer {
     min-height: 40vh;
     padding: var(--padded-room);
     color: var(--full-moon);
-    background: var(--stunning);
+    background: var(--dark-stunning);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -678,7 +679,7 @@ footer H3 {
 
 footer A {
     text-decoration: underline;
-    color: white;
+    color: var(--full-moon);
     text-decoration-color: var(--bright-fucking-orange);
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
@@ -686,7 +687,7 @@ footer A {
 
 footer A:hover {
     text-decoration: underline;
-    color: var(--dark-stunning);
+    color: var(--moonlight);
     text-decoration-color: var(--stunning);
     text-decoration-thickness: 1px;
     text-underline-offset: 4px;
