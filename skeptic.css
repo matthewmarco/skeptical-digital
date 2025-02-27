@@ -217,10 +217,82 @@ header section {
         font: 4rem/1 var(--odd-font);
         color: #414A62;
         font-weight: 300;
-        letter-spacing: -.06em;
+        letter-spacing: 0;
         text-align: left;
+        animation-name: tighten;
+        animation-fill-mode: both;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
     }
 
+    @keyframes tighten {
+        0% {
+            line-height: .8;
+            letter-spacing: -.2rem;
+        }
+    
+    
+        100% {
+            line-height: 1;
+            letter-spacing: -.06rem;
+        }
+    }
+
+    H2 .ampersand {
+        animation-name: pop-of-color;
+        animation: pop-of-color 3ms 5s 1 normal both;
+        display: inline-block;
+    }
+
+    @keyframes pop-of-color {
+        0% {
+            color: var(--stunning); 
+            transform: rotate(-20deg);
+        }
+    
+        100% {
+            color: var(--bright-fucking-orange);
+            transform: rotate(0deg);
+        }
+    }    
+
+    H2 .highlighted {
+        
+    }
+
+
+    @keyframes highlight {
+        0% {
+        text-decoration-line: none;
+        text-decoration-thickness: 0px;        
+        }
+    
+        100% {
+            text-decoration-line: solid;
+            text-decoration-thickness: 6px;                                
+        }
+    }
+
+    H2 .fade-in {
+        animation-name: fade-in;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        color: var(--stunning);
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: .01;
+        }
+    
+        50% {
+            opacity: .4;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 
 @media screen and (min-width: 800px) {
     
