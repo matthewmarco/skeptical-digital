@@ -240,7 +240,7 @@ header section {
     
     header h2 {
         font: 4rem/1 var(--odd-font);
-        color: #414A62;
+        color: var(--stunning);
         font-weight: 300;
         letter-spacing: 0;
         text-align: left;
@@ -263,33 +263,27 @@ header section {
 
     H2 .ampersand {
         animation-name: pop-of-color;
-        animation: pop-of-color 3ms 5s 1 normal both;
+        animation: pop-of-color 1s 4s linear 1 normal both;
         display: inline-block;
     }
 
     @keyframes pop-of-color {
         0% {
             color: var(--stunning); 
-            transform: rotate(-20deg);
-            font-weight: 300;
         }
     
         100% {
             color: var(--bright-fucking-orange);
-            transform: rotate(0deg);
-            font-weight: 700;
         }
     }    
 
+    H2 .highlighted {
+        animation: highlight 1s 4s linear 1 normal both;
+    }
+
     @keyframes highlight {
-        0% {
-        text-decoration-line: none;
-        text-decoration-thickness: 0px;        
-        }
-    
-        100% {
-            text-decoration-line: solid;
-            text-decoration-thickness: 6px;                                
+        to {
+            color: var(--dark-stunning);
         }
     }
 
