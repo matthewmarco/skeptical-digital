@@ -339,12 +339,16 @@ header section {
 
     @keyframes tighten {
         0% {
-            line-height: .6;
+            filter: blur(3px);
+            opacity: .3;
+            line-height: .95;
             letter-spacing: -.2rem;
         }
     
     
         100% {
+            filter: blur(0);
+            opacity: 1;
             line-height: .95;
             letter-spacing: -.06rem;
         }
@@ -709,5 +713,21 @@ footer A:hover {
 
     footer P {
         text-align: center;
+    }
+}
+
+
+#services H2 strong {
+    filter: blur(0);
+    animation-name: strikeout;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes strikeout {
+    to {
+        filter: blur(10px);
     }
 }
