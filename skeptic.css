@@ -715,19 +715,3 @@ footer A:hover {
         text-align: center;
     }
 }
-
-
-#services H2 strong {
-    filter: blur(0);
-    animation-name: strikeout;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-}
-
-@keyframes strikeout {
-    to {
-        filter: blur(10px);
-    }
-}
