@@ -441,7 +441,7 @@ main {
     MAIN H2 {
         font: 3rem/1 var(--odd-font);
         letter-spacing: -.1rem;
-        font-weight: 300;
+        font-weight: 700;
         color: #7a808e;
         margin-bottom: 6rem;
     }
@@ -449,7 +449,7 @@ main {
 
     MAIN H2 STRONG {
         color: var(--even-darker-stunning);
-        font-weight: 300;
+        font-weight: 700;
     }
 
     #services DIV, #about DIV {
@@ -584,14 +584,14 @@ main {
 
         main h2 {
             font-size: 4rem;
-            font-weight: 300;
+            font-weight: 700;
             letter-spacing: -.1rem;
         }
 
 
 
         main h2 strong {
-            font-weight: 300;
+            font-weight: 700;
         }
 
         main P {
@@ -634,12 +634,12 @@ main {
 
         main h2 {
             font-size: 2rem;
-            font-weight: 300;
+            font-weight: 700;
             letter-spacing: -.05rem;
         }
 
         main h2 strong {
-            font-weight: 300;
+            font-weight: 700;
         }
 
         #services-list UL, #clients-list UL {
