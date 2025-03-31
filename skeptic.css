@@ -289,6 +289,8 @@ header section {
     }
 
     H2 .fade-in {
+        text-transform: uppercase;
+        font-size: 60%;
         animation-name: fade-in;
         animation-duration: 5s;
         animation-fill-mode: both;
@@ -298,14 +300,17 @@ header section {
     @keyframes fade-in {
         0% {
             opacity: .01;
+            letter-spacing: -.2rem;
         }
     
         50% {
             opacity: .4;
+            letter-spacing: .4rem;
         }
 
         100% {
             opacity: 1;
+            
         }
     }
 
@@ -331,6 +336,7 @@ header section {
         font-family: var(--even-font);
         font-size: 5rem;
         letter-spacing: -.16rem;
+        max-width: 1200px;
         font-weight: 300;
         line-height: .95;
         text-align: center;
