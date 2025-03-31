@@ -289,8 +289,6 @@ header section {
     }
 
     H2 .fade-in {
-        text-transform: uppercase;
-        font-size: 60%;
         animation-name: fade-in;
         animation-duration: 5s;
         animation-fill-mode: both;
@@ -305,7 +303,7 @@ header section {
     
         50% {
             opacity: .4;
-            letter-spacing: .4rem;
+            
         }
 
         100% {
@@ -710,9 +708,9 @@ footer A:hover {
     }
 
     footer #locate {
-        display: grid;
+        /*display: grid;
         grid-template-columns: 50% 50%;
-        gap: var(--flex-gap);
+        gap: var(--flex-gap);*/
         width: 100%;
         text-align: center;
     }
