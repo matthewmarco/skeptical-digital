@@ -171,11 +171,17 @@ Main
 
 MAIN {
     background: linear-gradient(to bottom, var(--dark-stunning), var(--stunning));
+    scroll-snap-type: y mandatory;
 }
 
 MAIN SECTION {
-    padding: 20rem var(--padded-room);
+    padding: 16rem var(--padded-room);
+}
 
+#about IMG {
+    max-width: 200px;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 MAIN A:link, MAIN A:visited {
@@ -265,7 +271,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
 }  
+
+#locate A {
+    color: var(--full-moon);
+    text-decoration: underline;
+    text-decoration-color: var(--full-moon);
+    
+}
 
