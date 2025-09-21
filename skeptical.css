@@ -2,6 +2,10 @@
 
 *{box-sizing:border-box;margin:0;padding:0}html,body{font-family:sans-serif;line-height:1.5}img{max-width:100%;height:auto}ul{list-style:none}button{background:none;border:0;color:inherit;cursor:pointer;font:inherit;padding:0}input,textarea,select{font:inherit}a{text-decoration:none}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}caption{display:table-caption;text-align:center}p{margin:0}blockquote{margin:0;padding:0}q{quotes:none}q:before,q:after{content:none}details,summary{display:list-item}details>summary:first-of-type{display:list-item}details>summary:not(:first-of-type){display:none}details[open]>summary{display:none}details[open]>*:not(summary){animation:fadein 0.5s ease-in-out}@keyframes fadein{from{opacity:0}to{opacity:1}}
 
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
 /* Variables */
 
 :root {
