@@ -76,18 +76,17 @@ Available
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem var(--padded-room);
+    padding: 1rem var(--padded-room);
     background-color: black;
     color: var(--dust);
-    font: 1rem/1.5 var(--even-font);
-    letter-spacing: var(--tight-letter-spacing);
+    font: 0.8rem/1.5 var(--even-font);
 }
 
 #available a[href="#contact"] {
     display: block;
     background: #d44503 radial-gradient(circle, #d24403 0%, #ee4e03 95%, #fd5102 100%);
     border-top: 1px solid #F5671F;
-    border-left: 1px solid #F5671F;
+    border-left: 1px solid #6b3e28;
     border-right: 2px solid #E65618;
     border-bottom: 2px solid #E65618;
     padding: .375rem .75rem;
