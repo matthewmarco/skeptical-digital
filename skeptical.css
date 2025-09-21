@@ -142,16 +142,24 @@ HEADER SECTION {
 H1 {
     font-size: 1.25rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.25;
     margin-bottom: 2lh;
 }
 
 H2 {
     font-size: 1.25rem;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.25;
     color: var(--dust);
 }
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
 /*
 
 
@@ -181,14 +189,14 @@ MAIN SECTION {
 #about IMG {
     max-width: 200px;
     float: right;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 2rem 2rem;
 }
 
 MAIN A:link, MAIN A:visited {
-    color: white;
+    color: var(--full-moon);
     text-decoration: underline;
-    text-decoration-color: black;
-    text-decoration-thickness: 2px;
+    text-decoration-color: #E1D5F2;
+    text-decoration-thickness: 1px;
     text-underline-offset: 4px; 
     transition: 0.2s;
 }
@@ -196,8 +204,7 @@ MAIN A:link, MAIN A:visited {
 MAIN A:hover {
     text-decoration: underline;
     color: white;
-    text-decoration-color: var(--full-moon);
-    text-decoration-thickness: 2px;
+    text-decoration-color: var(--bright-fucking-orange);
     text-underline-offset: 4px;
 }   
 
