@@ -78,7 +78,7 @@ Available
     align-items: center;
     padding: .5rem var(--padded-room);
     background-color: black;
-    color: white;
+    color: var(--dust);
     font: 1rem/1.5 var(--even-font);
     letter-spacing: var(--tight-letter-spacing);
 }
