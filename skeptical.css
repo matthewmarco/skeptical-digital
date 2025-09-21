@@ -1,0 +1,271 @@
+/* Codeium Reset */
+
+*{box-sizing:border-box;margin:0;padding:0}html,body{font-family:sans-serif;line-height:1.5}img{max-width:100%;height:auto}ul{list-style:none}button{background:none;border:0;color:inherit;cursor:pointer;font:inherit;padding:0}input,textarea,select{font:inherit}a{text-decoration:none}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}caption{display:table-caption;text-align:center}p{margin:0}blockquote{margin:0;padding:0}q{quotes:none}q:before,q:after{content:none}details,summary{display:list-item}details>summary:first-of-type{display:list-item}details>summary:not(:first-of-type){display:none}details[open]>summary{display:none}details[open]>*:not(summary){animation:fadein 0.5s ease-in-out}@keyframes fadein{from{opacity:0}to{opacity:1}}
+
+/* Variables */
+
+:root {
+    
+    --tight-letter-spacing: -0.025rem;
+    --section-border: 1px solid #C4C6CE;
+    --padded-room: clamp(1rem, 2vw, 10rem);
+
+    --dust: #bfc7ca;
+    --full-moon: #DFE2E3;
+    --moonlight: #edefef;
+    --stunning: #414A62;
+    
+    --dark-stunning: #2D3243;
+    --even-darker-stunning: #161921;
+    --copper: #7F3C0F;
+    --new-moon: #323333;
+    --bright-fucking-orange: #F5671F;
+    --bright-blue: #b6dadb;
+    
+    --button-padding-small: .3125rem .5625rem;
+    --button-padding-large: .5625rem 1.3125rem;
+    --outside-button-padding: .1875rem;
+
+    --flex-gap: clamp(1rem, 2vw, 2rem);
+
+    --body-max-width: 1600px;
+
+
+    --odd-font: "tarzana-narrow", sans-serif;
+    --even-font: "tarzana-wide", serif;
+
+    --skeumorphic-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+
+
+HTML {
+    scroll-behavior: smooth;
+}
+
+BODY {
+    background-color: var(--dark-stunning);
+    color: var(--full-moon);
+    font-family: var(--even-font);
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+Available
+------------------------------------------------------------
+*/
+
+#available {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem var(--padded-room);
+    background-color: black;
+    color: white;
+    font: 1rem/1.5 var(--even-font);
+    letter-spacing: var(--tight-letter-spacing);
+}
+
+#available a[href="#contact"] {
+    display: block;
+    background: #d44503 radial-gradient(circle, #d24403 0%, #ee4e03 95%, #fd5102 100%);
+    border-top: 1px solid #F5671F;
+    border-left: 1px solid #F5671F;
+    border-right: 2px solid #E65618;
+    border-bottom: 2px solid #E65618;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    transform: rotate(.75deg);
+    transition: .3s;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+    letter-spacing: 0; 
+    font-size: 1rem;
+    animation-name: level;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+Header
+------------------------------------------------------------
+*/
+
+HEADER {
+    width: 100%;
+    background: linear-gradient(to bottom, var(--even-darker-stunning), var(--dark-stunning));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    
+}
+
+HEADER SECTION {
+    padding: var(--padded-room);
+    min-height: 70vh;
+    width: 100%;
+    max-width: var(--body-max-width);
+}
+
+H1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 2lh;
+}
+
+H2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--dust);
+}
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+Main
+------------------------------------------------------------
+*/
+
+MAIN {
+    background: linear-gradient(to bottom, var(--dark-stunning), var(--stunning));
+}
+
+MAIN SECTION {
+    padding: 20rem var(--padded-room);
+
+}
+
+MAIN A:link, MAIN A:visited {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px; 
+    transition: 0.2s;
+}
+
+MAIN A:hover {
+    text-decoration: underline;
+    color: white;
+    text-decoration-color: var(--full-moon);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}   
+
+MAIN SECTION H3,
+MAIN SECTION H2 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+MAIN section P,
+MAIN SECTION UL,
+MAIN SECTION UL LI,
+MAIN SECTION OL,
+MAIN SECTION OL LI {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 60ch;
+}
+
+MAIN SECTION P,
+MAIN SECTION H2,
+MAIN SECTION H3,
+MAIN SECTION UL {
+    margin-bottom: 1lh;
+}
+
+MAIN SECTION H2 {
+    color: var(--bright-fucking-orange);
+}
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+Footer
+------------------------------------------------------------
+*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+    background: var(--bright-fucking-orange);
+    background-size: contain;
+    padding: var(--padded-room)
+}
+
+#locate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 20;
+}
+
+#locate div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}  
+
