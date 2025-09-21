@@ -209,7 +209,6 @@ MAIN SECTION H2 {
 }
 
 MAIN SECTION H2 STRONG {
-    
     font-weight: 700;
 }
 
@@ -221,7 +220,13 @@ MAIN SECTION OL LI {
     font-size: 1.25rem;
     line-height: 1.5;
     max-width: 60ch;
+    font-weight: 300;
 }
+
+MAIN STRONG {
+font-weight: 700;
+}
+
 
 MAIN SECTION P,
 MAIN SECTION H2,
