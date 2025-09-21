@@ -205,6 +205,12 @@ MAIN SECTION H3,
 MAIN SECTION H2 {
     font-size: 1.25rem;
     line-height: 1.2;
+    font-weight: 700;
+}
+
+MAIN SECTION H2 STRONG {
+    
+    font-weight: 700;
 }
 
 MAIN section P,
