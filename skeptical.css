@@ -79,7 +79,7 @@ Available
     padding: 1rem var(--padded-room);
     background-color: black;
     color: var(--dust);
-    font: 0.8rem/1.5 var(--even-font);
+    font: 0.75rem/2 var(--even-font);
 }
 
 #available a[href="#contact"] {
@@ -140,14 +140,14 @@ HEADER SECTION {
 }
 
 H1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.25;
     margin-bottom: 2lh;
 }
 
 H2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.25;
     color: var(--dust);
@@ -157,7 +157,7 @@ H2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: .5rem;
+    gap: .25lh;
 }
 
 /*
@@ -211,7 +211,7 @@ MAIN A:hover {
 MAIN SECTION H3,
 MAIN SECTION H2 {
     font-size: 1.25rem;
-    line-height: 1.2;
+    line-height: 1.5;
     font-weight: 700;
 }
 
