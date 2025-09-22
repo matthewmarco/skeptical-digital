@@ -183,13 +183,13 @@ MAIN {
 }
 
 MAIN SECTION {
-    padding: 16rem var(--padded-room);
+    padding: 12lh var(--padded-room);
 }
 
 #about IMG {
     max-width: 200px;
     float: right;
-    margin: 0 0 2rem 2rem;
+    margin: 0 0 1lh 1lh;
 }
 
 MAIN A:link, MAIN A:visited {
@@ -213,10 +213,15 @@ MAIN SECTION H2 {
     font-size: 1.25rem;
     line-height: 1.5;
     font-weight: 700;
+    margin-top: 2lh;
 }
 
 MAIN SECTION H2 STRONG {
     font-weight: 700;
+}
+
+MAIN SECTION H3 {
+    margin-top: 2lh;
 }
 
 MAIN section P,
@@ -239,7 +244,7 @@ MAIN SECTION P,
 MAIN SECTION H2,
 MAIN SECTION H3,
 MAIN SECTION UL {
-    margin-bottom: 1lh;
+    margin-bottom: .5lh;
 }
 
 MAIN SECTION H2 {
